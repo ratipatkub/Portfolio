@@ -4,12 +4,11 @@
   padding: 0;
 }
 
-
 body {
   background-color: #f8fafc;
   color: #1e293b;
   line-height: 1.6;
-  font-family: "Chakra Petch" , cursive;
+  font-family: "Chakra Petch", cursive;
 }
 
 /* Header & Navbar */
@@ -39,7 +38,7 @@ nav a {
   transition: color 0.3s;
 }
 
-/* :hover และ Active Menu[cite: 2, 4] */
+/* :hover และ Active Menu */
 nav a:hover,
 nav a.active {
   color: #38bdf8;
@@ -48,12 +47,11 @@ nav a.active {
 
 /* Main Container */
 .container {
-  max-height: 1200px;
+  max-height: 1100px;
   width: 100%;
   margin: 2rem auto;
   padding: 3rem 2rem;
 }
-
 
 /* ///////////////
      Hero-Section 
@@ -72,7 +70,7 @@ nav a.active {
   border: 1px solid white;
   border-radius: 1.6rem;
   box-shadow: 2px 2px 5px black;
-  
+
   padding: 2rem;
 }
 
@@ -80,7 +78,7 @@ nav a.active {
   font-size: 15px;
 }
 
-.sub-hero h1{
+.sub-hero h1 {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -92,7 +90,7 @@ nav a.active {
   object-fit: cover;
   border: 2px solid black;
 
-  object-position: 1px;
+  object-position: 1px; /*ขยับรูปไปทางขวา 1 px */
 }
 
 .btn {
@@ -108,7 +106,7 @@ nav a.active {
 }
 
 .btn:hover {
-  background-color: #0369a1; /* :hover[cite: 4] */
+  background-color: #0369a1; 
 }
 
 /* Hero-section(Card-grid) */
@@ -130,11 +128,10 @@ nav a.active {
   margin-bottom: 2rem;
 }
 
-.highlight-card p{
- font-size: 15px;
+.highlight-card p {
+  font-size: 15px;
 }
 
- 
 /*////////////////
     About Zone 
 ////////////////*/
@@ -146,13 +143,12 @@ nav a.active {
   margin: 1.5rem;
 }
 
-
 .about-info {
   border: 2px solid black;
   border-radius: 40px;
   margin: 2rem 2rem;
   padding: 1.6rem;
-  
+
   box-shadow: 1px 2px 3px black;
 }
 
@@ -169,7 +165,7 @@ nav a.active {
 }
 
 .about-info p {
- padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .about-info h2 {
@@ -183,26 +179,21 @@ nav a.active {
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
 }
 
 .skill-info ul {
-
   list-style-type: none;
   font-size: 20px;
   padding: 2rem 2rem;
 }
 
 .skill-info {
-    border: 2px solid black;
+  border: 2px solid black;
   border-radius: 40px;
   margin: 2rem 2rem;
   padding: 1.6rem;
   text-align: center;
-
 }
-
-
 
 /* ///////////////////////
 Project Card-Section 
@@ -218,13 +209,11 @@ Project Card-Section
   background: white;
   border-radius: 8px;
   padding: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  width: 100%; 
+  width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 6px;
@@ -247,7 +236,7 @@ Project Card-Section
   text-align: center;
 }
 
-.contact-info h2{
+.contact-info h2 {
   margin-bottom: 1rem;
 }
 
@@ -263,11 +252,9 @@ Project Card-Section
   border: 2px solid black;
 }
 
-.contact-info p{
+.contact-info p {
   font-size: 18px;
 }
-
-
 
 /* Footer */
 footer {
@@ -278,10 +265,11 @@ footer {
   margin-top: 3rem;
 }
 
-/* Media Queries (Responsive)[cite: 4, 5, 6] */
+/* Media Queries (Responsive) */
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* เมนูแนวตั้งบนมือถือ */
+    flex-direction: column;
+    /*เมนูแนวตั้งบนมือถือ */
     gap: 1rem;
   }
 
@@ -294,6 +282,6 @@ footer {
   .contact-wrapper,
   .card-grid,
   .skill-grid {
-    grid-template-columns: 1fr; /* ปรับจาก 3 คอลัมน์เป็น 1 คอลัมน์[cite: 5, 6] */
+    grid-template-columns: 1fr; /* ปรับ selector คอลัมน์เป็น 1 คอลัมน์ */
   }
 }
