@@ -273,7 +273,7 @@ footer {
     gap: 1rem;
   }
 
-  .hero-section {
+  .hero-section, .about-section {
     flex-direction: column;
     text-align: center;
   }
